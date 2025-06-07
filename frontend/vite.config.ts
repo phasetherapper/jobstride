@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/jobs': 'http://localhost:3000',
-      // add more API routes here if needed later
     },
+    allowedHosts: ['jobstride-frontend-production.up.railway.app'], // ✅ Add your Railway domain here
   },
 });
